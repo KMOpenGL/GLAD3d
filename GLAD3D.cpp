@@ -40,7 +40,7 @@ int main()
 
     GL::genShader = new Shader();
     GL::genShader->GL_CompileShader(NULL, NULL);
-    GL::genShader->SetProject();
+    GL::genShader->SetProject(GL::genShader, GL::projection);
 
     while (!glfwWindowShouldClose(window))
     {

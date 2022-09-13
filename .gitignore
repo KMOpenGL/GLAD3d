@@ -1,0 +1,10 @@
+/.vs/
+**/x64/
+*.obj
+*.obj
+*.recipe
+*.ilk
+*.log
+*.obj
+*.tlog
+*.idb

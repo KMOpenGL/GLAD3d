@@ -138,11 +138,8 @@
   <ItemGroup>
     <ClInclude Include="GL.h" />
     <ClInclude Include="Includes.h" />
-    <ClInclude Include="Rendering.h" />
-    <ClInclude Include="Shader.h" />
     <ClInclude Include="stbi.h" />
     <ClInclude Include="stbi_image.h" />
-    <ClInclude Include="Texture.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

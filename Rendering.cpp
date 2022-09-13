@@ -1,15 +1,10 @@
-#include "Rendering.h"
-#include "GL.h"
+#include "Gl.h"
 std::vector<GL_Vertex> Rendering::batch_buffer;
 GLuint Rendering::batch_vao = -1;
 GLuint Rendering::batch_vbo = -1;
 Shader* Rendering::batch_shader = NULL;
 Texture* Rendering::batch_texture = NULL;
 Texture* Rendering::white = NULL;
-
-// alot is stolen from cucky
-// thanks cucky!
-
 
 void Rendering::push(GL_Vertex tl, GL_Vertex bl, GL_Vertex tr, GL_Vertex br)
 {

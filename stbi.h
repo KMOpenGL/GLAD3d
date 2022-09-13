@@ -1,5 +1,5 @@
 #pragma once
-#include "Texture.h"
+#include "GL.h"
 class stbi_h
 {
 public:

@@ -1,5 +1,5 @@
 #include "stbi.h"
-#include "Rendering.h"
+#include "GL.h"
 //Constructors and destructor
 		
 Texture* Texture::createWithImage(std::string filePath)

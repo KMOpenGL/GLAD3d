@@ -8,7 +8,7 @@ Texture* Texture::createWithImage(std::string filePath)
 	t->fromSTBI = true;
 	if (t->pixels == NULL)
 	{
-		std::cout << "pixels are fucking null? WTF STBI " << filePath << std::endl;
+		std::cout << "pixels are null? WTheck STBI " << filePath << std::endl;
 		return t;
 	}
 	if (stbi_h::stbi_error())

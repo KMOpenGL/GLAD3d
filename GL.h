@@ -5,6 +5,8 @@
 #include <iostream>
 #include <unordered_map>
 
+
+
 using namespace glm;
 static const char* generic_shader_vert = R"(
 #version 150 core
@@ -14,12 +16,14 @@ in vec4 v_colour;
 out vec2 f_uv;
 out vec4 f_colour;
 uniform mat4 u_projection;
+uniform mat4 u_view;
+uniform mat4 u_model;
 
 void main()
 {
 	f_uv = v_uv;
 	f_colour = v_colour;
-	gl_Position = u_projection * vec4(v_position.xy, 0.0, 1.0);
+	gl_Position = (u_projection * u_view * u_model) * vec4(v_position.xyz, 1.0);
 })";
 static const char* generic_shader_frag = R"(
 #version 150 core
@@ -278,6 +282,18 @@ struct Rect
 class Rendering
 {
 public:
+	enum DepthCompare
+	{
+		DepthCompare_Never,
+		DepthCompare_Less,
+		DepthCompare_Equal,
+		DepthCompare_LessEqual,
+		DepthCompare_Greater,
+		DepthCompare_NotEqual,
+		DepthCompare_GreaterEqual,
+		DepthCompare_Always,
+	};
+
 	static std::vector<GL_Vertex> batch_buffer;
 	static GLuint batch_vao;
 	static GLuint batch_vbo;

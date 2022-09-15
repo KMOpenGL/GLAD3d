@@ -70,7 +70,7 @@ int main()
         Rect r;
         r.x = 620;
         r.y = 340;
-        r.z = 12;
+        r.z = -12;
         r.w = 200;
         r.h = 200;
 

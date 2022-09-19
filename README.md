@@ -8,3 +8,6 @@ References (mostly):
 https://learnopengl.com/Getting-started/
 
 https://www.glfw.org/documentation
+
+
+Attrubutions: see att.md

@@ -10,4 +10,4 @@ https://learnopengl.com/Getting-started/
 https://www.glfw.org/documentation
 
 
-Attrubutions: see att.md
+Attrubutions: see [att.md](https://github.com/KMOpenGL/GLAD3d/blob/main/att.md)
